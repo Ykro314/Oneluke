@@ -1,0 +1,92 @@
+footer {
+  background-image: url("/graph/img/footer_bg.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-color: #5d5d5d;
+  background-repeat: no-repeat;
+  color: @color-fefefe;
+  padding-top: 120px;
+  padding-bottom: 95px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.contact__title--top {
+  font-size: @font-h2;
+  margin-bottom: 80px;
+}
+
+.contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__icon {
+    margin-bottom: 15px;
+  }
+  &__icon:before {
+    font-size: 30px;
+  }
+  .icon-flag:before {
+    font-size: 35px;
+  }
+  .icon-location:before {
+    font-size: 35px;
+  }
+  &__title {
+    margin-bottom: 35px;
+    font-size: @font-copyright;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  &__content {
+    font-size: 16px;
+    line-height: @line-height-blog;
+  }
+  input[name="name"],
+  input[name="email"] {
+    display: inline-block;
+    width: 47%;
+    margin-right: -5px;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: none;
+    transition: 0.2s all;
+  }
+  input[name="email"]{
+    margin-left: 6%;  
+  }
+  input[name="message"] {
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    transition: 0.2s all;
+  }
+  input[name="name"]:hover,
+  input[name="email"]:hover,
+  input[name="message"]:hover{
+    background: #e2e2e2;
+  }
+  input[type="submit"]{
+    width: 170px;
+    padding: 17px 0;
+    text-align: center;
+    border: none;
+    background: #2e2e2e;
+    color: @color-fefefe;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background: #202020;
+  }
+}

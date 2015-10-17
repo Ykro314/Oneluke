@@ -1,0 +1,158 @@
+@media (max-width: 800px) {
+  .timer {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  
+  .timer {
+    &__element {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .blog {
+    flex-wrap: wrap;
+    &__items {
+      width: 80%;
+    }
+  }
+  
+  .subscribe {
+    .inner .subscribe__logo {
+      width: 170px;
+      margin-right: 10px;
+    }
+    .inner .subscribe__column {
+      width: 75%;
+    }
+    .subscribe__form {
+      width: 100%;
+    }
+  }
+  
+  .intro{
+    .inner{
+    flex-wrap: wrap;  
+      .intro__left-col {
+        width: 100%;  
+        margin-bottom: 35px;
+      }
+      .intro__right-col {
+        width: 95%;
+        padding-left: 20px;
+      }
+    }
+  }
+  
+  main {
+    /* margin-bottom: 650px; */
+  }
+  
+  footer {
+    /* padding-bottom: 40px; */
+    background-size: cover;
+  }
+  .contact__title--top {
+  font-size: @font-h2;
+  margin-bottom: 20px;
+}
+  .contact {
+    justify-content: space-between;
+    &__col {
+      width: 50%;
+      padding-right: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    &__col:last-child {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .subscribe>.inner {
+    flex-wrap: wrap;
+  }
+  .subscribe {
+    .inner .subscribe__logo {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .inner .subscribe__column {
+      width: 100%; 
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+  }
+  
+  .partners {
+    &__logo {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    padding-top: 80px;
+  }
+  .partners {
+    display: none;
+  }
+  
+  .blog {
+    &__items {
+      width: 90%;
+    }
+  }
+  
+  .owl-carousel {
+    img {
+      display: none;
+    }
+    h4,p {
+      margin-left: 0;
+    }
+  }
+  
+  .contact {
+    &__col {
+      width: 100%;
+    }
+    input[name="name"],
+    input[name="email"] {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  
+  @media (max-width: 395px) {
+    header {
+      p{
+        display: none;
+      }
+      .timer {
+        display: none;
+      }
+    }
+    .subscribe {
+      &__email {
+        padding-left: 10px;
+        padding-right: 110px;
+      }
+      &__btn {
+        width: 90px;
+        font-size: 12px;
+      }
+    }
+  }
+}
