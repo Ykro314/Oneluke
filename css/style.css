@@ -69,7 +69,7 @@ header {
   z-index: 2;
   padding-top: 230px;
   padding-bottom: 140px;
-  background-image: url("/graph/img/header_bg_1.jpg");
+  background-image: url("../graph/img/header_bg_1.jpg");
   color: #fefefe;
   background-attachment: fixed;
   background-position: top center;
@@ -81,7 +81,7 @@ header .logo {
   height: 133px;
   margin: 0 auto;
   margin-bottom: 60px;
-  background: url("/graph/pict/header_logo.png") no-repeat 0 0;
+  background: url("../graph/pict/header_logo.png") no-repeat 0 0;
 }
 header .social {
   margin-bottom: 80px;
@@ -92,6 +92,7 @@ header .social__btn {
   height: 48px;
   border-radius: 50%;
   box-sizing: border-box;
+  text-decoration: none;
   transition: all 0.3s;
 }
 header .social__btn:hover {
@@ -149,7 +150,7 @@ main {
   padding-top: 20px;
   z-index: 2;
   margin-bottom: 600px;
-  background: white;
+  background-color: white;
 }
 /* .partners {
   width: 110%;
@@ -381,7 +382,7 @@ main {
   font-weight: bold;
 }
 footer {
-  background-image: url("/graph/img/footer_bg.jpg");
+  background-image: url("../graph/img/footer_bg.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-color: #5d5d5d;
@@ -470,6 +471,14 @@ footer {
 .contact input[type="submit"]:hover {
   background: #202020;
 }
+@media (max-width: 1250px) {
+  footer {
+    position: relative;
+  }
+  main {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 800px) {
   .timer {
     width: 100%;
@@ -517,7 +526,7 @@ footer {
   }
   .contact__title--top {
     font-size: 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .contact {
     justify-content: space-between;
@@ -525,7 +534,7 @@ footer {
   .contact__col {
     width: 50%;
     padding-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-sizing: border-box;
   }
   .contact__col:last-child {

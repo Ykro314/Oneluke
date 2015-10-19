@@ -13,18 +13,18 @@ $(document).ready(function() {
     owl.trigger('owl.next');
   })
   
-  $(".prev").click(function(){
+  $(".prev").click(function(){ 
     owl.trigger('owl.prev');
   })
-  
+})
   //  Footer height ===========================================================
   
-  var Foo_height = $("footer").height() + 205;
+ /* var Foo_height = $("footer").height() + 205;
   
   $("main").css({
     "margin-bottom" : +Foo_height+ "px"});
   
-});
+});*/
 
 
 
