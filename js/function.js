@@ -27,6 +27,12 @@ $(document).ready(function() {
 });*/
 
 
+if( navigator.userAgent.indexOf( "MSIE" ) !== -1 ) {
+  var footer = document.querySelector( "footer" );
+  var social = document.querySelector( ".social" );
+  footer.style.position = "static";
+  social.style.display = "none";
+}
 
 //Countdown Timer =====================================================================
 
@@ -69,3 +75,4 @@ function count(){
 };
 
 setTimeout(count,1000);
+
