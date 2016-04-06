@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         autoprefixer:  {
             options: {
-                browsers: ["last 3 version","ie 10"]
+                browsers: ["last 2 version","ie 10"]
             },
             style: {
                 src: "css/style.css"
